@@ -24,7 +24,6 @@ public class ServiceImpl implements Service{
             ps.setString(1, cardNum);
             ps.setDate(2, java.sql.Date.valueOf(date) );
             int result = ps.executeUpdate();
-
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
@@ -42,16 +41,12 @@ public class ServiceImpl implements Service{
             if(rs.next()){
                 String cardNumber =rs.getString("bank_card");
                 LocalDate startDate = rs.getDate("start_date").toLocalDate();
-
                 Subscription subs = new Subscription(cardNumber, startDate);
                 op = Optional.of(subs);
-
             }
-
         }catch(Exception e){
             System.err.println(e.getMessage());
         }
-        //Question: Is it possible to send a String to the Exception constructor when I create the exception?
         return Optional.ofNullable(op.orElseThrow(OptionalException::new));
     }
 

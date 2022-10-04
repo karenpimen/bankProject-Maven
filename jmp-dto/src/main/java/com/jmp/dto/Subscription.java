@@ -1,28 +1,15 @@
 package com.jmp.dto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.*;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Subscription {
     String bankcard;
     LocalDate startDate;
 
-    public Subscription(String bankcard, LocalDate startDate) {
-        this.bankcard = bankcard;
-        this.startDate = startDate;
-    }
-
-    public String getBankcard() {
-        return bankcard;
-    }
-
-    public void setBankcard(String bankcard) {
-        this.bankcard = bankcard;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
 }

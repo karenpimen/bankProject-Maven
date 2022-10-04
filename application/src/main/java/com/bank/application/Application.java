@@ -16,17 +16,15 @@ public class Application {
 
     public static void main(String[] args) {
 
-
-
         Bank bank = new BankImpl();
         Service service = new ServiceImpl();
-        //3.Service getAllUsers()
+
+        //Service getAllUsers()
         List<User> users = service.getAllUsers();
         List<BankCard> cards = new ArrayList<>();
         List<Subscription> subscriptions = new ArrayList<>();
         List<Subscription> subscriptionsByCond = new ArrayList<>();
         users = Collections.unmodifiableList(users);
-
 
         //Display users
         Iterator<User> itUsers = users.iterator();
@@ -45,14 +43,10 @@ public class Application {
         BankCardType type = BankCardType.CREDIT;
         while (itUsers.hasNext()) {
             cards.add(bank.createBankCard(itUsers.next(), type));
-          /*  Instruction 23. Reimplement createBankCard with method reference
-            I dont know how to crete new objects when constructor expects arguments Example:
-            cards.add(BankCard :: new(itUsers.next(), type));*/
+
             if (type == BankCardType.CREDIT) type = BankCardType.DEBIT;
             else type = BankCardType.CREDIT;
         }
-
-
 
         //Display cards with username and card type
         System.out.println("CARDS");
@@ -83,15 +77,10 @@ public class Application {
         System.out.println(service.getAverageUserAge());
 
         //5. Service static method isPayableUser
-        //Question: Is it possible to use method reference instead of Lambda here?
         users.forEach(u ->
                 System.out.println(u.getName()+" is payable user: "+ Service.isPayableUser(u)));
 
         //6. Service getAllSubscriptionsbyCondition
-        //Instruction 22. I did not find the way to implement it in a useful way
-        // I dont get how you send only an object that implements Predicate and returns a whole list
-
-
         subscriptionsByCond = service.getAllSubscriptionsByCondition(s ->s.getStartDate().compareTo(LocalDate.now()) != 0);
         for(Subscription s : subscriptionsByCond){
             System.out.println("Subscription by condition"+ s.getBankcard()+" Date: "+ s.getStartDate() );

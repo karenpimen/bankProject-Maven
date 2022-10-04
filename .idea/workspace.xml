@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ac12ba-432f-4dcc-9ee8-b5a2b210a50c" name="Changes" comment="" />
+    <list default="true" id="d2ac12ba-432f-4dcc-9ee8-b5a2b210a50c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-cloud-bank-impl/src/main/java/jmp/cloud/bank/impl/BankImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-cloud-bank-impl/src/main/java/jmp/cloud/bank/impl/BankImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-dto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-dto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/BankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/BankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-dto/src/main/java/com/jmp/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp-dto/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-dto/src/main/java/module-info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,21 +40,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/Karen_Pimentel/Desktop/Learn/ExFiles LinkedIn Learning/Ex_Files_Spring_Framework_Depth/Ex_Files_Spring_Framework_Depth/Exercise Files/Chapter 2/02_05_end",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bank.application.Application" />
